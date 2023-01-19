@@ -38,7 +38,9 @@ export const updatePerson = async (id, personData) => {
 
 export const deletePerson = async (id) => {
   try {
+    console.log(1)
     const response = await api.delete(`/persons/${id}`);
+    console.log(2)
     return response.data;
   } catch (error) {
     throw error;

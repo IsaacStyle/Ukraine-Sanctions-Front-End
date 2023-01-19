@@ -7,6 +7,7 @@ nav {
   top: 0px;
   display: flex;
   align-items: center;
+  z-index: 99;
 }
 .logo {
   height: 50px;
@@ -24,6 +25,7 @@ nav {
   font-weight: 400;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 21px;
+  z-index: 1;
 }
 .navlinks:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.88)
@@ -34,7 +36,9 @@ nav {
   z-index: 1;
 }
 .pholder {
-  color: #ffdcf0
+  color: #ffdcf0;
+  opacity: 0;
+  
 }
 body {
   background-color: #ffdcf0;
@@ -110,10 +114,19 @@ body {
     opacity: 0.1;
 }
 }
+.close {
+  position: absolute;
+  color: black;
+  float: right;
+  /* margin-right: -50px; */
+  text-decoration: none;
+  text-align:end;
+}
 .personsInfo {
   width: 50%;
   height: 52vh;
-  margin: 40px auto;
+  margin-top: 5%;
+  margin-left: 24%;
   text-align: center;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: rgb(253, 253, 253);
@@ -124,7 +137,19 @@ body {
   padding-bottom: 6px;
   text-overflow: ellipsis;
   overflow: hidden;
-
+  position: fixed;
+  z-index: 99;
+  animation: appear ease-in 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+@keyframes appear {
+  0% {
+    opacity: 0.05;
+  }
+  100% {
+    opacity: 1;
+}
 }
 .personsImgsInfo {
   border-radius: 10px;
@@ -164,4 +189,49 @@ body {
 }
 .dates {
   font-weight: 900;
+}
+.background {
+  background-image: url(https://github.com/individual-ism/api-project/raw/main/Ukraine_Flag.jpg);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  margin: 0 auto;
+  background-size: cover;
+  z-index: -1;
+  margin-top: -60px;
+  background-position: center;
+}
+.buttons {
+  height: 50px;
+  width: 50%;
+  margin-top: 75vh;
+  margin-left: 39vw;
+  position: absolute;
+  display: flex;
+  animation: appear ease-in 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+.button {
+  margin: 20px;
+  font-size: 30px;
+  border-radius: 8px;
+  padding: 2px;
+}
+.button:hover {
+  box-shadow: 0 0 15px rgba(255, 28, 28, 0.88)
+}
+.createForm {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin-top: 15vh;
+  margin-left: 43vw;
+  flex-direction: column;
+  width: 200px;
+}
+.inputs {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
 }

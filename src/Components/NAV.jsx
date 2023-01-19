@@ -7,7 +7,7 @@ function NAV() {
         <Link to='/'><img src={'https://github.com/individual-ism/api-project/raw/main/%D1%81%D0%BB%D0%B0%D0%B2%D0%B0.jpg'} alt='logo' className='logo'></img></Link>
             <ul className='navlist'>
                 <Link to={`/persons`} className='navlinks'>Persons Sanctions</Link>
-                <Link to={`/companies`} className='navlinks'>Company Sanctions</Link>
+                <Link to={`/new-persons`} className='navlinks'>Create New Sanctions</Link>
 
             </ul>
         </nav>

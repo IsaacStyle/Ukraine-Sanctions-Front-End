@@ -3,6 +3,8 @@ import Home from './Home.jsx'
 import Persons from './Persons.jsx'
 import PersonsInfo from './PersonsInfo.jsx'
 import { useState, useEffect } from 'react'
+import NewPerson from './NewPerson.jsx'
+import EditPerson from './EditPerson.jsx'
 
 
 function Routez() {
@@ -17,7 +19,15 @@ function Routez() {
                 </ul>
                 </>
             } />
-            <Route path={`/persons/:id`} element={<PersonsInfo />} />
+            <Route path={`/persons/:id`} element={
+                        <>
+                        <div className='background'>
+                        <PersonsInfo /> 
+                        </div>                    
+                        </>} />
+                        
+            <Route path={`/persons/:id/edit`} element={<EditPerson />} />
+            <Route path={`/new-persons`} element={<NewPerson />} />
         </Routes>
     )
 }
