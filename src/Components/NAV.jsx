@@ -8,7 +8,6 @@ function NAV() {
             <ul className='navlist'>
                 <Link to={`/persons`} className='navlinks'>Persons Sanctions</Link>
                 <Link to={`/new-persons`} className='navlinks'>Create New Sanctions</Link>
-
             </ul>
         </nav>
         </>

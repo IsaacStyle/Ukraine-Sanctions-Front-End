@@ -12,13 +12,13 @@ useEffect(() => {
 
 async function fetchPersons() {
   const allPersons = await getPersons();
-  setPersons(allPersons);
+  setPersons(allPersons.slice(0,24));
 }
 
   return (
     
     <>       
-      {persons.length && persons.slice(0,24).map((peep, idx) => (
+      {persons.length && persons.map((peep, idx) => (
           <li key={idx} className="peopleListItems">
             <Link to={`/persons/${peep?._id}`}>
               <img

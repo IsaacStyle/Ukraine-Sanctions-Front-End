@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const Url = 'https://api-project-production-8128.up.railway.app/'
+const Url = 'https://uasanctions.up.railway.app/'
 
 
 const api = axios.create({

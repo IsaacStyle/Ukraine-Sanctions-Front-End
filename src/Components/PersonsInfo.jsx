@@ -18,7 +18,7 @@ export default function PersonsInfo() {
 
   const clickDelete = async () => {
     await deletePerson(params.id);
-    navigate(`./persons/`, { replace: true });
+    navigate(`/persons/`, { replace: true });
   };
 
   return (
