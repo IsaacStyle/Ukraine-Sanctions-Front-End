@@ -2,17 +2,21 @@ import { useState,useEffect } from "react";
 import { Link, Route, Routes, useParams } from "react-router-dom";
 import { getPersons } from "../Services/persons.js";
 
-function Persons(props) {
+function Persons({page, setPage}) {
 const params = useParams()
 const [persons,setPersons] = useState([])
 
+
+
+
 useEffect(() => {
+  setPersons([])
   fetchPersons();
-}, []);
+}, [page]);
 
 async function fetchPersons() {
   const allPersons = await getPersons();
-  setPersons(allPersons.slice(0,24));
+  setPersons(allPersons.slice(0 + 24 * (page - 1),24 + 24 * (page - 1)));
 }
 
   return (
@@ -28,7 +32,9 @@ async function fetchPersons() {
               ></img>
             </Link>
           </li>
-        )) || <h1 className='load'>Loading. . .</h1>}
+
+        )) 
+        || <h1 className='load'>Loading. . .</h1>}
     </>
   );
 }
