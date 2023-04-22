@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Ukraine Sanctions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###### The Ukraine war is a heartbreaking situation and its hard to believe such an event would occur in current year. The purpose of this web app is to provide information on the sanctions placed on important individuals associated with Russia in response to the heinous acts.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To install the application, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+   ```sh
+   git clone https://github.com/username/Ukraine-Sanctions-Front-End.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Change to the project directory:
 
-### `npm run build`
+   ```sh
+   cd Ukraine-Sanctions-Front-End
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the required dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```sh
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+To start the development server, run:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application will be accessible at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces
+- [React Router DOM](https://reactrouter.com/web/guides/quick-start): A routing library for React applications
+- [Axios](https://github.com/axios/axios): A promise-based HTTP client for the browser and Node.js
 
-## Learn More
+### API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You will need to connect to an API that provides the necessary data about sanctioned people due to the Russia-Ukraine invasion. Please refer to the API documentation to set up the correct endpoints and authentication.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://github.com/individual-ism/UA_Sanctions_API
